@@ -1,6 +1,6 @@
 databases:
-  - name: coupon_mopa_api_development
-    databaseName: coupon_mopa_api_development
+  - name: coupon_mopa_api_production
+    databaseName: coupon_mopa_api_production
     user: coupon_mopa_api
     plan: free
 
