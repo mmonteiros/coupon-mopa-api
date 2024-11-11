@@ -4,7 +4,7 @@ class CouponsController < ApplicationController
     if !params[:code].present?
       render json: {
         coupon: {
-          code: 'MOPA20',
+          code: 'MOPA25',
           discount: 25
         }
       }, status: :ok
