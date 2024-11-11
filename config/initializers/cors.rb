@@ -8,7 +8,7 @@ gem 'rack-cors', require: 'rack/cors'
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "http://localhost:3000"
+    origins "https://mopastore.vercel.app"
 
     resource "*",
       headers: :any,
