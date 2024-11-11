@@ -1,8 +1,7 @@
 class CouponsController < ApplicationController
   # GET /getCoupon/:code
   def show
-    code = params[:code]
-    if code.empty?
+    if !params[:code].present?
       render json: {
         coupon: {
           code: 'MOPA20',
