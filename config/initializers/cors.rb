@@ -11,8 +11,16 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins "https://mopastore.vercel.app"
 
     resource "*",
-      headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head],
-      expose: ['Access-Control-Allow-Origin']
+             headers: :any,
+             methods: [:get, :post, :put, :patch, :delete, :options, :head],
+             expose: ['Access-Control-Allow-Origin']
+  end
+  allow do
+    origins "http://localhost:3000"
+
+    resource "*",
+             headers: :any,
+             methods: [:get, :post, :put, :patch, :delete, :options, :head],
+             expose: ['Access-Control-Allow-Origin']
   end
 end
